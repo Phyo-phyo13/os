@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+     <dialog id="mydialog" style=" background-color: #f4ffef;margin-bottom: 10%; margin-left: 10%;border: 1px dotted green;">
+            <input type="number" id="count"><br>
+            <input type="text" name="text" id="text">
+
+            <!-- <button onclick="mfunction()">Prompt</button> -->
+        </dialog>
+
+
+        <button id="show">Show</button>
+        <p id="dem"></p>
+    </div>
+
+    <script type="text/javascript">
+    (function(){
+    var dialog=document.getElementById("mydialog");
+    document.getElementById("show").onclick=function(){
+        dialog.show(); 
+    };
+
+})();
+
+ (function(){
+    var dialog=document.getElementById("mydialog");
+    document.getElementById("text").onclick=function(){
+      document.getElementById("count").text(); 
+    };
+
+})();
+
+
+
+// function mfunction(){ 
+//     var txt;
+// if(confirm("Press a button!")) {
+// txt="You pressed OK";
+
+// }
+// else {
+// txt="You pressed Cancel";
+// }
+// document.getElementById("dem").show(alert(txt));
+// }
+    </script>
+</body>
+</html>
